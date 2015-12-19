@@ -1,0 +1,124 @@
+body {
+    margin: 0;
+}
+
+body article {
+    position: relative;
+}
+
+div#body-wrapper {
+    width: 100%;
+    position: relative;
+}
+
+div#body-wrapper header,
+div#body-wrapper footer {
+    width: 100%;
+    height: 10vh;
+    background-color: green;
+}
+
+div#body-wrapper footer {
+    text-align: center;
+    line-height: 10vh;
+    position: fixed;
+    bottom: 0;
+}
+
+div#body-wrapper footer span {
+    vertical-align: middle;
+    line-height: normal;
+}
+
+div#body-wrapper header .border-menu {
+    position: relative;
+    padding-left: 2em;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 2em;
+}
+
+div#body-wrapper header .border-menu:before {
+    content: "";
+    cursor: pointer;
+    position: absolute;
+    top: 0.25em;
+    left: 0.5em;
+    width: 1em;
+    height: 0.125em;
+    border-top: 0.375em double #000;
+    border-bottom: 0.125em solid #000;
+}
+
+div#body-wrapper article {
+    min-height: 80vh;
+}
+
+div#body-wrapper article div.center-box {
+    margin: 20px auto;
+    border: 1px solid gray;
+    padding: 10px;
+    width: 75%;
+    display: table;
+}
+
+div#body-wrapper article div.center-box #table-box,
+div#body-wrapper article div.center-box #image-box {
+    display: table-cell;
+}
+
+div#body-wrapper article div.center-box #table-box {
+    width: 40%;
+    padding-right: 10px;
+}
+
+div#body-wrapper article div.center-box #table-box .table {
+    width: 100%;
+}
+
+div#body-wrapper article div.center-box #image-box {
+    border: 1px solid gray;
+    width: 59%;
+    position: relative;
+}
+
+div#body-wrapper article div.center-box #image-box #image-holder {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 50%;
+}
+
+div#body-wrapper article div.center-box #table-box .table,
+div#body-wrapper article div.center-box #table-box .table td {
+    border: 1px solid gray;
+    border-collapse: collapse;
+    padding: 5px;
+}
+
+div#body-wrapper article div.center-box #table-box .table td:nth-child(odd) {
+    text-align: center;
+}
+
+div#body-wrapper article div.center-box #table-box .table td a {
+    text-decoration: none;
+}
+
+div.side-menu {
+    display: none;
+    position: fixed;
+    top: 10vh;
+    left: 0;
+    background-color: yellow;
+    height: 100%;
+    width: 25%;
+}
+
+div.side-menu-active {
+    display: block !important;
+}
+
+body.not-scrollable {
+    overflow: hidden;
+}

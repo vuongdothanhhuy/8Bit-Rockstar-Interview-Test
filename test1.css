@@ -1,0 +1,100 @@
+body {
+    margin: 0;
+}
+
+div#body-wrapper {
+    width: 100vw;
+    position: relative;
+}
+
+div#body-wrapper header,
+div#body-wrapper footer {
+    width: 100%;
+    height: 10vh;
+    background-color: green;
+}
+
+div#body-wrapper footer {
+    text-align: center;
+    line-height: 10vh;
+    position: fixed;
+    bottom: 0;
+}
+
+div#body-wrapper footer span {
+    vertical-align: middle;
+    line-height: normal;
+}
+
+div#body-wrapper header .border-menu {
+    position: relative;
+    padding-left: 2em;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 2em;
+}
+
+div#body-wrapper header .border-menu:before {
+    content: "";
+    position: absolute;
+    top: 0.25em;
+    left: 0.5em;
+    width: 1em;
+    height: 0.125em;
+    border-top: 0.375em double #000;
+    border-bottom: 0.125em solid #000;
+}
+
+div#body-wrapper article {
+    padding-bottom: 10vh;
+    height: 80vh;
+}
+
+div#body-wrapper article div.center-box {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: green;
+    width: 50vw;
+    max-width: 400px;
+}
+
+div#body-wrapper article div.center-box form fieldset {
+    text-align: center;
+    border: none;
+    padding: 20px;
+}
+
+div#body-wrapper article div.center-box form fieldset p:last-child {
+    margin-bottom: 0px;
+}
+
+div#body-wrapper article div.center-box form fieldset p select,
+div#body-wrapper article div.center-box form fieldset p input {
+    width: 100%;
+}
+
+div#body-wrapper article div.center-box form fieldset p select,
+div#body-wrapper article div.center-box form fieldset p input,
+div#body-wrapper article div.center-box form fieldset p button {
+    height: 2.5em;
+}
+
+div#body-wrapper article div.center-box form fieldset p label {
+    display: block;
+    padding-bottom: 10px;
+}
+
+div#body-wrapper article div.center-box form fieldset p button span {
+    font-size: 1.5em;
+}
+
+div#body-wrapper .arrow-right {
+    width: 0;
+    height: 0;
+    border-top: 8px solid transparent;
+    border-bottom: 8px solid transparent;
+    border-left: 10px solid green;
+    display: inline-block;
+}
